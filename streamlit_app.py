@@ -19,8 +19,7 @@ st.set_page_config(layout="wide", page_title="Personal Carbon Calculator")
 st.title("Personal Carbon Calculator App ⚠️")
 
 # User inputs
-st.subheader("🌍 Your Country")
-country = st.selectbox("Select", ["Bahrain"])
+country = ("Bahrain")
 
 col1, col2 = st.columns(2)
 
@@ -64,6 +63,7 @@ waste_emissions = round(waste_emissions / 1000, 2)
 total_emissions = round(
     transportation_emissions + electricity_emissions + diet_emissions + waste_emissions, 2
 )
+
 
 if st.button("Calculate CO2 Emissions"):
 
